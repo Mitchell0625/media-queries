@@ -1,0 +1,210 @@
+.landing {
+  background-image: url("header-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 75vh;
+  width: 100vw;
+}
+
+.landing-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.logo {
+  font-size: 28px;
+  line-height: 42px;
+  font-family: "Kaushan Script", cursive;
+  color: #fed136;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* font-family: "Montserrat", sans-serif; */
+}
+.menu {
+  display: none;
+  background: #fed136;
+  border-radius: 4px;
+  padding: 13px;
+  font-size: 12px;
+  color: white;
+}
+nav div {
+  margin: 0 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+main {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-top: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+main h2 {
+  margin-top: 40px;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
+  font-family: serif;
+  font-style: italic;
+  font-weight: 500;
+}
+main h1 {
+  font-size: 75px;
+  line-height: 75px;
+  margin-bottom: 75px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.yellow {
+  font-size: 18px;
+  line-height: 27px;
+  background: #fed136;
+  padding: 20px 40px;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.image {
+  width: 10px;
+  height: 10px;
+}
+/*----- Services Section -------*/
+.services {
+  height: 70vh;
+  padding: 160px;
+  text-align: center;
+}
+.blurb {
+  height: 150px;
+}
+.blurb h2 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 48px;
+}
+.italic {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 20px;
+}
+.services p {
+  font-family: serif;
+}
+.three-container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.three h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.three p {
+  font-size: 16px;
+}
+/*-------Media Queries -------*/
+@media (max-width: 991px) {
+  .landing {
+    height: 98vh;
+  }
+  .landing-container {
+    padding-top: 10px;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .menu {
+    display: block;
+    padding: 10px;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main h2 {
+    line-height: 20px;
+    margin-top: 100px;
+  }
+  main h1 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .landing {
+    height: 60vh;
+  }
+  .landing-container {
+    width: 90vw;
+    height: 60vh;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .menu {
+    display: block;
+    padding: 10px;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    height: 40vh;
+    margin: 0 auto;
+    padding-top: 10px;
+    /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+    padding-bottom: 10px;
+  }
+  main h2 {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  main h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+}
